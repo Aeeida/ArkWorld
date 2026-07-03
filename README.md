@@ -78,10 +78,10 @@ JointDev/           联合开发解决方案入口，仅保留工程关联文件
 - OpenTelemetry 可观测性。
 - DDD/CQRS 风格的领域层、应用层、模块层拆分。
 
-![rocket](images/rocket.png)
+![rocket](docs/images/rocket.png)
 
-![base](images/base.png)
+![base](docs/images/base.png)
 
-![space](images/space.png)
+![space](docs/images/space.png)
 
-![login](images/login.png)
+![login](docs/images/login.png)
