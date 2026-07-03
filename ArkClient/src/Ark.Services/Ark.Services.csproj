@@ -1,0 +1,37 @@
+<Project Sdk="Godot.NET.Sdk/4.6.2">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!--
+      These two lines will stop errors like this one:
+      error CS0579: Duplicate 'global::System.Runtime.Versioning.TargetFrameworkAttribute' attribute
+    -->
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Friflo.Engine.ECS" Version="3.6.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\Middle\Game.Shared.Core\Game.Shared.Core.csproj" />
+		<ProjectReference Include="..\Ark.Shared\Ark.Shared.csproj" />
+		<ProjectReference Include="..\Ark.Ecs\Ark.Ecs.csproj" />
+		<ProjectReference Include="..\Ark.Networking\Ark.Networking.csproj" />
+		<ProjectReference Include="..\Ark.Analyzers.Attributes\Ark.Analyzers.Attributes.csproj" />
+		<ProjectReference Include="..\Ark.Analyzers\Ark.Analyzers.csproj" ReferenceOutputAssembly="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Analyzer Include="..\Ark.Analyzers\bin\$(Configuration)\netstandard2.0\Ark.Analyzers.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove=".godot\**\*.cs" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Middle\Game.Shared.Events\Game.Shared.Events.csproj" />
+    <ProjectReference Include="..\GameServer.Api.Core\GameServer.Api.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Persistence\GameServer.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\GameServer.Networking.Core\GameServer.Networking.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Networking.Transport\GameServer.Networking.Transport.csproj" />
+    <ProjectReference Include="..\GameLayer.Core\GameLayer.Core.csproj" />
+    <ProjectReference Include="..\GameLayer.Building\GameLayer.Building.csproj" />
+    <ProjectReference Include="..\GameLayer.Combat\GameLayer.Combat.csproj" />
+    <ProjectReference Include="..\GameLayer.Inventory\GameLayer.Inventory.csproj" />
+    <ProjectReference Include="..\GameLayer.Vehicle\GameLayer.Vehicle.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="9.1.0" />
+    <PackageReference Include="Cortex.Mediator" Version="3.1.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

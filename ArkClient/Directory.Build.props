@@ -1,0 +1,18 @@
+<Project>
+  <PropertyGroup>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <TreatWarningsAsErrors Condition="'$(ContinuousIntegrationBuild)' == 'true'">true</TreatWarningsAsErrors>
+    <WarningsAsErrors>$(WarningsAsErrors);ARK001;ARK002;ARK003;ARK004;ARK005;ECS001;ECS002;ECS003;ECS004;ECS900</WarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectName)' != 'Ark.Analyzers' and '$(MSBuildProjectName)' != 'Ark.Analyzers.Attributes' and Exists('$(MSBuildThisFileDirectory)src\Ark.Analyzers\Ark.Analyzers.csproj') and Exists('$(MSBuildThisFileDirectory)src\Ark.Analyzers.Attributes\Ark.Analyzers.Attributes.csproj')">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)src\Ark.Analyzers.Attributes\Ark.Analyzers.Attributes.csproj"
+                      />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)src\Ark.Analyzers\Ark.Analyzers.csproj"
+                      OutputItemType="Analyzer"
+                      ReferenceOutputAssembly="false"
+                      />
+  </ItemGroup>
+</Project>

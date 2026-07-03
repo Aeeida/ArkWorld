@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameServer.Api.Core\GameServer.Api.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Grains.Implementations\GameServer.Grains.Implementations.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Persistence\GameServer.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Caching\GameServer.Infrastructure.Caching.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Messaging\GameServer.Infrastructure.Messaging.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Monitoring\GameServer.Infrastructure.Monitoring.csproj" />
+    <ProjectReference Include="..\GameServer.Networking.SignalR\GameServer.Networking.SignalR.csproj" />
+    <ProjectReference Include="..\GameServer.Networking.Transport\GameServer.Networking.Transport.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Login\GameServer.Modules.Login.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Character\GameServer.Modules.Character.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.World\GameServer.Modules.World.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Combat\GameServer.Modules.Combat.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Inventory\GameServer.Modules.Inventory.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Economy\GameServer.Modules.Economy.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Fleet\GameServer.Modules.Fleet.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Guild\GameServer.Modules.Guild.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Instance\GameServer.Modules.Instance.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Login\GameServer.Application.Features.Login.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Character\GameServer.Application.Features.Character.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.World\GameServer.Application.Features.World.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Combat\GameServer.Application.Features.Combat.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Inventory\GameServer.Application.Features.Inventory.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Economy\GameServer.Application.Features.Economy.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Fleet\GameServer.Application.Features.Fleet.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Guild\GameServer.Application.Features.Guild.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Instance\GameServer.Application.Features.Instance.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Core\GameServer.Application.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Skills\GameServer.Modules.Skills.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Quests\GameServer.Modules.Quests.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Crafting\GameServer.Modules.Crafting.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Exploration\GameServer.Modules.Exploration.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Sovereignty\GameServer.Modules.Sovereignty.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Achievements\GameServer.Modules.Achievements.csproj" />
+    <ProjectReference Include="..\GameServer.Modules.Scripting\GameServer.Modules.Scripting.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Features.Scripting\GameServer.Application.Features.Scripting.csproj" />
+    <ProjectReference Include="..\GameLayer.Core\GameLayer.Core.csproj" />
+    <ProjectReference Include="..\GameLayer.Combat\GameLayer.Combat.csproj" />
+    <ProjectReference Include="..\GameLayer.Inventory\GameLayer.Inventory.csproj" />
+    <ProjectReference Include="..\GameLayer.Vehicle\GameLayer.Vehicle.csproj" />
+    <ProjectReference Include="..\GameLayer.Quest\GameLayer.Quest.csproj" />
+    <ProjectReference Include="..\GameLayer.Building\GameLayer.Building.csproj" />
+    <ProjectReference Include="..\GameLayer.WorldTick\GameLayer.WorldTick.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="9.1.0" />
+    <PackageReference Include="Cortex.Mediator" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="10.0.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

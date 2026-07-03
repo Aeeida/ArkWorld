@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameLayer.Core\GameLayer.Core.csproj" />
+    <ProjectReference Include="..\GameLayer.Combat\GameLayer.Combat.csproj" />
+    <ProjectReference Include="..\GameLayer.Inventory\GameLayer.Inventory.csproj" />
+    <ProjectReference Include="..\GameLayer.Vehicle\GameLayer.Vehicle.csproj" />
+    <ProjectReference Include="..\GameLayer.Quest\GameLayer.Quest.csproj" />
+    <ProjectReference Include="..\GameLayer.Building\GameLayer.Building.csproj" />
+    <ProjectReference Include="..\GameServer.Networking.Transport\GameServer.Networking.Transport.csproj" />
+    <ProjectReference Include="..\GameServer.Networking.Core\GameServer.Networking.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

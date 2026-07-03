@@ -1,0 +1,27 @@
+<Project Sdk="Godot.NET.Sdk/4.6.2">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!--
+	  These two lines will stop errors like this one:
+	  error CS0579: Duplicate 'global::System.Runtime.Versioning.TargetFrameworkAttribute' attribute
+	-->
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+     <ProjectReference Include="..\..\..\Middle\Game.Shared.Core\Game.Shared.Core.csproj" />
+     <ProjectReference Include="..\..\..\Middle\Game.Shared.Events\Game.Shared.Events.csproj" />
+     <ProjectReference Include="..\..\..\Middle\Game.Shared.Protocols\Game.Shared.Protocols.csproj" />
+		<ProjectReference Include="..\Ark.Abstractions\Ark.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

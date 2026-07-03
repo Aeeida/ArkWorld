@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+		<PackageReference Include="xunit" Version="2.*" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="2.*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Ark.Configuration\Ark.Configuration.csproj" />
+		<ProjectReference Include="..\Ark.Events\Ark.Events.csproj" />
+		<ProjectReference Include="..\Ark.Abstractions\Ark.Abstractions.csproj" />
+		<ProjectReference Include="..\Ark.Player.Character\Ark.Player.Character.csproj" />
+		<ProjectReference Include="..\Ark.Player.Vehicle\Ark.Player.Vehicle.csproj" />
+		<ProjectReference Include="..\Ark.Gameplay.Life\Ark.Gameplay.Life.csproj" />
+		<ProjectReference Include="..\Ark.Gameplay.Space\Ark.Gameplay.Space.csproj" />
+		<ProjectReference Include="..\Ark.World.Core\Ark.World.Core.csproj" />
+		<ProjectReference Include="..\Ark.World.Data\Ark.World.Data.csproj" />
+		<ProjectReference Include="..\Ark.Ecs\Ark.Ecs.csproj" />
+		<ProjectReference Include="..\Ark.Systems\Ark.Systems.csproj" />
+	</ItemGroup>
+
+</Project>

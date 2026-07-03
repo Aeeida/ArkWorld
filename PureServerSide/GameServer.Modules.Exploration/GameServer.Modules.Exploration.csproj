@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameServer.Application.Features.Exploration\GameServer.Application.Features.Exploration.csproj" />
+    <ProjectReference Include="..\GameServer.Networking.Core\GameServer.Networking.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Core\GameServer.Application.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

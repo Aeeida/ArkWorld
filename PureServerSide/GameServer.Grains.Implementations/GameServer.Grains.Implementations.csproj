@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Middle\Game.Shared.Events\Game.Shared.Events.csproj" />
+    <ProjectReference Include="..\GameServer.Grains.Interfaces\GameServer.Grains.Interfaces.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Core\GameServer.Application.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Domain.Events\GameServer.Domain.Events.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Messaging\GameServer.Infrastructure.Messaging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Orleans.Persistence.Memory" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="10.0.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

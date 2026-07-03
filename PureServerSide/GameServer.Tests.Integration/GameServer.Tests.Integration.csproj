@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="FluentAssertions" Version="8.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="Microsoft.Orleans.TestingHost" Version="10.0.1" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameServer.Host\GameServer.Host.csproj" />
+    <ProjectReference Include="..\GameServer.Api.Core\GameServer.Api.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Persistence\GameServer.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\GameServer.Grains.Interfaces\GameServer.Grains.Interfaces.csproj" />
+    <ProjectReference Include="..\GameServer.Grains.Implementations\GameServer.Grains.Implementations.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Messaging\GameServer.Infrastructure.Messaging.csproj" />
+  </ItemGroup>
+
+</Project>

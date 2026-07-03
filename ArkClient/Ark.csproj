@@ -1,0 +1,71 @@
+<Project Sdk="Godot.NET.Sdk/4.6.2">
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
+		<EnableDynamicLoading>true</EnableDynamicLoading>
+      <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="src\GameBootstrap.cs" />
+		<Compile Include="src\Bootstrap\**\*.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Friflo.Engine.ECS" Version="3.6.0" />
+	  <PackageReference Include="Friflo.Engine.ECS.Generators" Version="3.6.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="src\Ark.Abstractions\Ark.Abstractions.csproj" />
+	  <ProjectReference Include="src\Ark.Audio\Ark.Audio.csproj" />
+	  <ProjectReference Include="src\Ark.Bridge\Ark.Bridge.csproj" />
+	  <ProjectReference Include="src\Ark.Bridge.Building\Ark.Bridge.Building.csproj" />
+	  <ProjectReference Include="src\Ark.Camera\Ark.Camera.csproj" />
+	  <ProjectReference Include="src\Ark.Configuration\Ark.Configuration.csproj" />
+	  <ProjectReference Include="src\Ark.Core\Ark.Core.csproj" />
+	  <ProjectReference Include="src\Ark.Debug\Ark.Debug.csproj" />
+	  <ProjectReference Include="src\Ark.Ecs\Ark.Ecs.csproj" />
+	  <ProjectReference Include="src\Ark.Events\Ark.Events.csproj" />
+	  <ProjectReference Include="src\Ark.Gameplay.AI\Ark.Gameplay.AI.csproj" />
+	  <ProjectReference Include="src\Ark.Gameplay.BaseBuilding\Ark.Gameplay.BaseBuilding.csproj" />
+	  <ProjectReference Include="src\Ark.Gameplay.Combat\Ark.Gameplay.Combat.csproj" />
+	  <ProjectReference Include="src\Ark.Gameplay.Economy\Ark.Gameplay.Economy.csproj" />
+	  <ProjectReference Include="src\Ark.Gameplay.Life\Ark.Gameplay.Life.csproj" />
+	  <ProjectReference Include="src\Ark.Gameplay.Space\Ark.Gameplay.Space.csproj" />
+	  <ProjectReference Include="src\Ark.Gameplay.Squad\Ark.Gameplay.Squad.csproj" />
+	  <ProjectReference Include="src\Ark.Gameplay.Vehicle\Ark.Gameplay.Vehicle.csproj" />
+	  <ProjectReference Include="src\Ark.Gpu\Ark.Gpu.csproj" />
+	  <ProjectReference Include="src\Ark.Input\Ark.Input.csproj" />
+	  <ProjectReference Include="src\Ark.Interaction\Ark.Interaction.csproj" />
+	  <ProjectReference Include="src\Ark.Networking\Ark.Networking.csproj" />
+	  <ProjectReference Include="src\Ark.Persistence\Ark.Persistence.csproj" />
+	  <ProjectReference Include="src\Ark.Player\Ark.Player.csproj" />
+	  <ProjectReference Include="src\Ark.Player.Character\Ark.Player.Character.csproj" />
+	  <ProjectReference Include="src\Ark.Player.Vehicle\Ark.Player.Vehicle.csproj" />
+	  <ProjectReference Include="src\Ark.Render\Ark.Render.csproj" />
+	  <ProjectReference Include="src\Ark.Services\Ark.Services.csproj" />
+	  <ProjectReference Include="src\Ark.Bridge.Player\Ark.Bridge.Player.csproj" />
+	  <ProjectReference Include="src\Ark.Shared\Ark.Shared.csproj" />
+	  <ProjectReference Include="src\Ark.Systems\Ark.Systems.csproj" />
+	  <ProjectReference Include="src\Ark.Tests\Ark.Tests.csproj" />
+	  <ProjectReference Include="src\Ark.Tests.Integration\Ark.Tests.Integration.csproj" />
+	  <ProjectReference Include="src\Ark.UI\Ark.UI.csproj" />
+	  <ProjectReference Include="src\Ark.World\Ark.World.csproj" />
+	  <ProjectReference Include="src\Ark.World.Core\Ark.World.Core.csproj" />
+	  <ProjectReference Include="src\Ark.World.Data\Ark.World.Data.csproj" />
+	  <ProjectReference Include="src\Ark.World.Terrain\Ark.World.Terrain.csproj" />
+	  <ProjectReference Include="src\Ark.World.Environment\Ark.World.Environment.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="scripts\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include=".github\copilot-instructions.md" />
+	  <None Include="Directory.Build.props" />
+	</ItemGroup>
+</Project>

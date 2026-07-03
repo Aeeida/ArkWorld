@@ -1,0 +1,19 @@
+<Project Sdk="Godot.NET.Sdk/4.6.2">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<!--
+      These two lines will stop errors like this one:
+      error CS0579: Duplicate 'global::System.Runtime.Versioning.TargetFrameworkAttribute' attribute
+    -->
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+	</PropertyGroup>
+
+		<ItemGroup>
+			<ProjectReference Include="..\Ark.Events\Ark.Events.csproj" />
+		</ItemGroup>
+
+	</Project>

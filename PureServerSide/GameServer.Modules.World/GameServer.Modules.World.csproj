@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameServer.Application.Features.World\GameServer.Application.Features.World.csproj" />
+    <ProjectReference Include="..\GameServer.Networking.Core\GameServer.Networking.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Application.Core\GameServer.Application.Core.csproj" />
+    <ProjectReference Include="..\GameServer.Infrastructure.Persistence\GameServer.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\GameServer.Domain.Entities\GameServer.Domain.Entities.csproj" />
+    <ProjectReference Include="..\GameLayer.Core\GameLayer.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

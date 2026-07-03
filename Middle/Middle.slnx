@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Game.Shared.Core/Game.Shared.Core.csproj" />
+  <Project Path="Game.Shared.Events/Game.Shared.Events.csproj" />
+  <Project Path="Game.Shared.Models/Game.Shared.Models.csproj" />
+  <Project Path="Game.Shared.Protocols/Game.Shared.Protocols.csproj" />
+</Solution>
